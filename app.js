@@ -26,9 +26,9 @@ const superAdminRoute = require('./Routes/SuperADmin/SuperAdminRoutes');
 /* user dont need any kind of check auth in login and signup */ 
 app.use(authRoutes);
 app.use(userRoute);
-app.use(coursesRoute);
 /* check if user is logged in before see the courses */
 //app.use('/courses', checkAuth);
+app.use(coursesRoute);
 
 
 /* only admins or super admins can access and edit or add courses */
