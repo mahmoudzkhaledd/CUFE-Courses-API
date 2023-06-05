@@ -10,4 +10,4 @@ appRoute.post('/login', login);
 
 appRoute.get('/personal-profile', getPresonalProfile);
 
-module.exports = appRoute;
+module.exports = appRoute; 
