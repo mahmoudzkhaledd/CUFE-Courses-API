@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start":"npm install\nnode app.js",
+=======
+    "start":"node app.js",
+>>>>>>> 7430c85dab1f09c37aeac8c1124fdd0f02e5d5d4
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -39,7 +39,6 @@ async function signUp(req, res) {
 
 async function login(req, res) {
     try {
-        console.log(await User.find());
         const { email, password } = req.body;
         const tempUser = await User.findOne({ email });
         if (!tempUser) return res.status(400).json({ message: "please check email or password" });
