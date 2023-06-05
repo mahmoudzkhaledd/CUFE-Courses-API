@@ -138,9 +138,9 @@ async function searchCourse(req, res) {
 
         const courses = await Course.find({
             "$or": [
-                { name: { "$regex": key } },
-                { code: { "$regex": key } },
-            ]
+                { name:  { "$regex": new RegExp(key, "i") } },
+                { code:  { "$regex": new RegExp(key, "i") } },
+            ] 
         },{_id:1,code:1,name:1});
         return res.status(200).json(courses);
     } catch (err) {
